@@ -1,0 +1,40 @@
+{
+  "name": "@reavail/eslint-config",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reavail/reavail-config.git",
+    "directory": "packages/eslint-config"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf coverage"
+  },
+  "bin": {
+    "eslint": "./node_modules/.bin/eslint"
+  },
+  "files": [
+    "eslint-preset-next.js",
+    "eslint-preset-react.js"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "eslint": "^8.13.0",
+    "eslint-config-next": "^12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-testing-library": "^5.3.1",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.1"
+  }
+}

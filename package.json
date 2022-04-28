@@ -1,0 +1,24 @@
+{
+  "name": "reavail-config",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**.*.{ts,tsx,md}\"",
+    "publish:release": "lerna publish --force-publish --registry=https://npm.pkg.github.com/",
+    "publish-canary": "lerna version prerelease --preid canary --force-publish"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "prettier": "^2.6.2",
+    "turbo": "^1.2.4"
+  },
+  "packageManager": "yarn@1.22.17"
+}

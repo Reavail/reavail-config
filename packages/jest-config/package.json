@@ -1,0 +1,34 @@
+{
+  "name": "@reavail/jest-config",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reavail/reavail-config.git",
+    "directory": "packages/jest-config"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf .turbo && rm -rf dist/ && rm -rf node_modules && rm -rf coverage"
+  },
+  "bin": {
+    "jest": "./node_modules/.bin/jest"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "tsup": "^5.12.5"
+  }
+}

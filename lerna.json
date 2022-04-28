@@ -1,0 +1,23 @@
+{
+  "npmclient": "yarn",
+  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "exact": true
+    }
+  },
+  "publish": {
+    "publish": {
+      "allowBranch": [
+        "master",
+        "canary"
+      ],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com/"
+    }
+  },
+  "version": "independent"
+}
