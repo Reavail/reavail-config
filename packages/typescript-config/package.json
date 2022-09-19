@@ -15,5 +15,6 @@
     "base.json",
     "nextjs.json",
     "react-library.json"
-  ]
+  ],
+  "gitHead": "5bfe7404437765cf66472b09645698a400815da9"
 }
