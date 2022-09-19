@@ -1,6 +1,6 @@
 # Reavail config monorepo
 
-Contains the base configuration packages for different tools like typescript, jest, eslint used by @reavail library.
+Contains the base configuration packages for different tools like typescript, jest, eslint, postcss used by @reavail library.
 
 `The configuration packages where separated from the @reavail repository since they are not implementing ui related features.`
 
@@ -12,4 +12,5 @@ Built with [turborepo](https://turborepo.org) and published with [lerna](https:/
 | --- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------- |
 | 1.  | [`@reavail/eslint-config`](packages/eslint-config)         | Base eslint configuration from which other packages `eslintrc.js` configuration extend. | 1.0.0   |
 | 2.  | [`@reavail/jest-config`](packages/jest-config)             | Base jest configuration from which other `jest.config.ts` configurations extend.        | 1.0.0   |
-| 3.  | [`@reavail/typescript-config`](packages/typescript-config) | Base typescript configurations from which all other `tsconfig.json` inherit from.       | 1.0.0   |
+| 3.  | [`@reavail/postcss-config`](packages/postcss-config)       | Base postcss configurations from which other `postcss.config.js` configurations from.   | 1.0.0   |
+| 4.  | [`@reavail/typescript-config`](packages/typescript-config) | Base typescript configurations from which all other `tsconfig.json` inherit from.       | 1.0.0   |

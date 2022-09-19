@@ -19,5 +19,9 @@
       "registry": "https://npm.pkg.github.com/"
     }
   },
+  "ignoreChanges": [
+    "**/node_modules/**",
+    "**/package.json"
+  ],
   "version": "independent"
 }
