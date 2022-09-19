@@ -17,8 +17,8 @@
     "eslint": "./node_modules/.bin/eslint"
   },
   "files": [
-    "postcss-next.js",
-    "postcss-tailwind.js"
+    "postcss-preset-next.js",
+    "postcss-preset-tailwind.js"
   ],
   "devDependencies": {
     "autoprefixer": "^10.4.11",
