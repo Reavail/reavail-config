@@ -12,7 +12,7 @@
     "test": "turbo run test",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**.*.{ts,tsx,md}\"",
-    "publish:release": "lerna publish --force-publish --registry=https://npm.pkg.github.com/",
+    "publish:release": "lerna publish --registry=https://npm.pkg.github.com/",
     "publish-canary": "lerna version prerelease --preid canary --force-publish",
     "lerna-changed": "lerna changed"
   },
